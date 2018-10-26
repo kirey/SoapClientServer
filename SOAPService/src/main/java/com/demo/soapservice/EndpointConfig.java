@@ -14,7 +14,7 @@ public class EndpointConfig {
 	@Bean
 	public void startSOAP() {
 		//Change IP address,put IP address of you computer
-		Endpoint.publish("http://192.168.60.15:8001/zodiacSign", new PersonImpl());
+		Endpoint.publish("http://localhost:8001/zodiacSign", new PersonImpl());
 	}
 	
 }

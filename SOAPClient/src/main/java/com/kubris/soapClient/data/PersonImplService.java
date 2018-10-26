@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "PersonImplService", targetNamespace = "http://soapservice.demo.com/", wsdlLocation = "http://192.168.60.15:8001/zodiacSign?wsdl")
+@WebServiceClient(name = "PersonImplService", targetNamespace = "http://soapservice.demo.com/", wsdlLocation = "http://localhost:8001/zodiacSign?wsdl")
 public class PersonImplService
     extends Service
 {
