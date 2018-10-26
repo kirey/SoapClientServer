@@ -30,7 +30,7 @@ public class PersonImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://192.168.60.15:8001/zodiacSign?wsdl");
+            url = new URL("http://localhost:8001/zodiacSign?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
