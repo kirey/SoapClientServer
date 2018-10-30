@@ -14,5 +14,8 @@ public interface Person {
  
     @WebMethod
     ZodiacSignResponse getSign(PersonInput personInput);
+    
+    @WebMethod
+    ZodiacSignResponse getAttitude(PersonInput personInput);
  
 }

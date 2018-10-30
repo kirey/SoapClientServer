@@ -36,5 +36,10 @@ public class PersonImpl implements Person {
 		return new ZodiacSignResponse("Don't know the zodiac sign!");
 	}
 
+	@Override
+	public ZodiacSignResponse getAttitude(PersonInput personInput) {
+		return new ZodiacSignResponse("rrrrrrr");
+	}
+
 	
 }

@@ -31,6 +31,20 @@ public interface Person {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getAttitude", targetNamespace = "http://soapservice.demo.com/", className = "com.kubris.soapClient.data.GetAttitude")
+    @ResponseWrapper(localName = "getAttitudeResponse", targetNamespace = "http://soapservice.demo.com/", className = "com.kubris.soapClient.data.GetAttitudeResponse")
+    public ZodiacSignResponse getAttitude(
+        @WebParam(name = "arg0", targetNamespace = "")
+        PersonInput arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns com.kubris.soapClient.data.ZodiacSignResponse
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "getSign", targetNamespace = "http://soapservice.demo.com/", className = "com.kubris.soapClient.data.GetSign")
     @ResponseWrapper(localName = "getSignResponse", targetNamespace = "http://soapservice.demo.com/", className = "com.kubris.soapClient.data.GetSignResponse")
     public ZodiacSignResponse getSign(

@@ -24,6 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _GetAttitude_QNAME = new QName("http://soapservice.demo.com/", "getAttitude");
+    private final static QName _GetAttitudeResponse_QNAME = new QName("http://soapservice.demo.com/", "getAttitudeResponse");
     private final static QName _GetSign_QNAME = new QName("http://soapservice.demo.com/", "getSign");
     private final static QName _GetSignResponse_QNAME = new QName("http://soapservice.demo.com/", "getSignResponse");
 
@@ -51,6 +53,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetAttitudeResponse }
+     * 
+     */
+    public GetAttitudeResponse createGetAttitudeResponse() {
+        return new GetAttitudeResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetAttitude }
+     * 
+     */
+    public GetAttitude createGetAttitude() {
+        return new GetAttitude();
+    }
+
+    /**
      * Create an instance of {@link PersonInput }
      * 
      */
@@ -64,6 +82,24 @@ public class ObjectFactory {
      */
     public ZodiacSignResponse createZodiacSignResponse() {
         return new ZodiacSignResponse();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAttitude }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soapservice.demo.com/", name = "getAttitude")
+    public JAXBElement<GetAttitude> createGetAttitude(GetAttitude value) {
+        return new JAXBElement<GetAttitude>(_GetAttitude_QNAME, GetAttitude.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAttitudeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soapservice.demo.com/", name = "getAttitudeResponse")
+    public JAXBElement<GetAttitudeResponse> createGetAttitudeResponse(GetAttitudeResponse value) {
+        return new JAXBElement<GetAttitudeResponse>(_GetAttitudeResponse_QNAME, GetAttitudeResponse.class, null, value);
     }
 
     /**
